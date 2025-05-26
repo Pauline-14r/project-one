@@ -1,29 +1,106 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
-.cover-page__body {
-	max-width: 1440px;
-	background-color: rgb(255, 255, 255);
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
 }
 
-.cover-page__header {
+*,
+*::before,
+*::after {
 	box-sizing: border-box;
-	max-width: 1440px;
-	height: 115px;
-	margin: -32px 0 -23px 0;
-	padding: 0;
-	background-color: rgb(255, 255, 255);
 }
 
-.cover-page__header-size {
-	margin: 32px 0 23px 0;
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+input[type='file'] {
+	max-width: 100%;
+}
+
+.cover-page {
+	max-width: 1440px;
+	padding: 32px 140px 23px 140px;
+	background-color: rgb(255, 255, 255);
 }
 
 .header {
+	box-sizing: border-box;
+	max-height: 115px;
 	position: relative;
 	display: flex;
-	flex-direction: row;
-	max-width: 1440px;
-	max-height: 60px;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
 }
 
 .header__menu-bar {
@@ -33,15 +110,13 @@
 .header__logo-millenium {
 	max-width: 182px;
 	height: auto;
-	margin: 35px 34px 25px 140px;
 }
 
 .header__menu {
-	margin: 55px 132px 43px 0;
-	padding: 0px;
+	max-width: 385px;
 	display: flex;
-	flex-direction: row;
 	align-items: start;
+	justify-content: space-between;
 	list-style-type: none;
 	color: rgb(42, 35, 103);
 	font-family: Montserrat;
@@ -53,8 +128,6 @@
 
 .header__link-main {
 	text-decoration: none;
-	margin-left: 0;
-	margin-right: 27px;
 }
 
 .header__link-main:hover {
@@ -63,7 +136,6 @@
 
 .header__link-price {
 	text-decoration: none;
-	margin-right: 27px;
 }
 
 .header__link-price:hover {
@@ -72,7 +144,6 @@
 
 .header__link-feedback {
 	text-decoration: none;
-	margin-right: 27px;
 	white-space: nowrap; 
 }
 
@@ -82,7 +153,6 @@
 
 .header__link-contacts {
 	text-decoration: none;
-	margin-right: 0;
 }
 
 .header__link-contacts:hover {
@@ -138,7 +208,7 @@
 }
 
 .header__contact-inf-container {
-	margin: 39px 20px 32px 0;
+	max-width: 233px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -183,7 +253,6 @@
 .button--small {
 	width: 177px;
 	height: 60px;
-	margin: 32px 140px 23px 0;
 }
 
 .button--small:hover {
@@ -208,24 +277,21 @@
 	.header__navigation-bar, .header__icon-tg-container, .header__icon-wp-container, .header__contact-inf-container {
 		display: none;
 	}
-	.cover-page__header {
-		box-sizing: border-box;
+
+	.cover-page {
+		padding: 15px;
 		max-width: 768px;
-		max-height: 97px;
-		margin-top: -22px;
 		background-color: rgb(255, 255, 255);
 	}
-	.cover-page__header-size {
-		margin-bottom: 15px;
-	}
+
 	.header {
+		box-sizing: border-box;
+		max-height: 97px;
 		display: flex;
-		flex-direction: row;
 		justify-content: space-around;
 		align-items: center;
-		max-width: 768px;
-		max-height: 60px;
 	}
+
 	.header__menu-bar {
 		display: block;
 		flex: 1 1 auto;
@@ -236,8 +302,6 @@
 		flex: 1 1 auto;
 		max-width: 177.61px;
 		height: auto;
-		margin-left: auto;
-		margin-right: auto;
 	}
 	.button--small {
 		flex: 1 1 auto;
@@ -267,23 +331,20 @@
 	.header__navigation-bar, .header__icon-tg-container, .header__icon-wp-container, .header__contact-inf-container {
 		display: none;
 	}
-	.cover-page__header {
-		box-sizing: border-box;
+	.cover-page {
 		max-width: 360px;
-		max-height: 62px;
-		margin-top: -14px;
-		padding: 0;
+		padding: 13px;
 		background-color: rgb(255, 255, 255);
 	}
-	.cover-page__header-size {
-		margin-bottom: 13px;
-	}
+
 	.header {
+		box-sizing: border-box;
+		max-height: 62px;
 		display: flex;
-		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
 	}
+
 	.header__menu-bar {
 		flex: 1 1 auto;
 		display: block;
@@ -294,8 +355,6 @@
 		flex: 1 1 auto;
 		max-width: 7.08rem;
 		height: auto;
-		margin-left: auto;
-		margin-right: auto;
 	}
 	.button--small {
 		flex: 1 1 auto;
