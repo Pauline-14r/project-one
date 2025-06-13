@@ -1,0 +1,223 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+input[type='file'] {
+	max-width: 100%;
+}
+
+.header {
+	box-sizing: border-box;
+	padding: 13px;
+	background-color: rgb(255, 255, 255);
+}
+
+.header__wrapper {
+	margin: 0 auto;
+	max-width: 360px;
+	max-height: 62px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+} 
+
+.button {
+	width: 52px;
+	height: 32.5px;
+	border: 0;
+	border-radius: 5px;
+	color: rgb(255, 255, 255);
+	font-family: Montserrat;
+	font-size: 12px;
+	font-weight: 800;
+	line-height: 15px;
+	letter-spacing: 0%;
+	text-align: center;
+	background-color: rgb(107, 90, 249);
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: rgb(103, 196, 201);
+}
+
+.button__icon {
+	display: block;
+}
+
+.button__svg {
+	max-width: 1.05rem;
+	max-height: 1.05rem;
+	color: rgb(255, 255, 255);
+}
+
+.navigation {
+	padding: 24px;
+}
+
+.navigation__wrapper {
+	position: relative;
+	margin: 0 auto;
+	max-width: 360px;
+	max-height: 735px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 220px;
+}
+
+.navigation__closing-icon {
+	position: absolute;
+	left: 5px;
+	max-width: 14px;
+	height: auto;
+}
+
+.navigation__menu-list {
+	padding-top: 38px;
+	max-width: 160px;
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 28px;
+	color: rgb(42, 35, 103);
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 17px;
+	letter-spacing: 0%;
+}
+
+.navigation__link-1,
+.navigation__link-2,
+.navigation__link-3,
+.navigation__link-4,
+.navigation__link-5,
+.navigation__link-6,
+.navigation__link-7 {
+	color: rgb(42, 35, 103);
+}
+
+.navigation__contacts {
+	padding-bottom: 18px;
+	max-width: 178px;
+	max-height: 134px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 32px;
+	color: rgb(107, 90, 249);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 22px;
+	letter-spacing: 0%;
+}
+
+.navigation__call-area {
+	max-width: 178px;
+	max-height: 44px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.navigation__email-link, .navigation__phone-link {
+	color: rgb(107, 90, 249);
+}
+
+.navigation__link-1:hover,
+.navigation__link-2:hover,
+.navigation__link-3:hover,
+.navigation__link-4:hover,
+.navigation__link-5:hover,
+.navigation__link-6:hover,
+.navigation__link-7:hover,
+.navigation__email-link:hover,
+.navigation__phone-link:hover {
+	color: rgb(103, 196, 201);
+}
+
+
