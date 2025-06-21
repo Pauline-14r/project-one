@@ -87,6 +87,10 @@ input[type='file'] {
 	max-width: 100%;
 }
 
+.body {
+	margin: 0 auto;
+}
+
 .header {
 	box-sizing: border-box;
 	padding: 32px 60px;

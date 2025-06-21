@@ -102,9 +102,38 @@ input[type='file'] {
 	align-items: center;
 } 
 
-.header__navigation-bar {
-	max-width: 41px;
-	max-height: 20px;
+.header__menu-bar {
+	max-width: 42px;
+	max-height: 12px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	background: transparent;
+}
+
+.header__line-1 {
+	display: block;
+	padding: 0;
+	width: 100%;
+	height: 4px;
+	background: rgb(107, 90, 249);
+}
+
+.header__line-2 {
+	display: block;
+	padding: 0;
+	width: 50%;
+	height: 4px;
+	background: rgb(107, 90, 249);
+}
+
+.header__line-3 {
+	display: block;
+	padding: 0;
+	width: 100%;
+	height: 4px;
+	background: rgb(67, 205, 147);
 }
 
 .header__logo-millenium {
@@ -305,19 +334,17 @@ input[type='file'] {
 
 	.header {
 	box-sizing: border-box;
-	padding: 32px 60px;
+	padding: 32px;
 	position: relative; 
-	background-color: rgb(255, 255, 255);
 }
 
 .header__wrapper {
-	margin: 0 auto;
 	max-width: 1440px;
 	max-height: 115px;
 	display: flex;
-	/* gap: 34px; */
+	gap: 34px;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: unset;
 }
 
 .header__menu-bar {
@@ -326,21 +353,20 @@ input[type='file'] {
 
 .header__logo-millenium {
 	max-width: 182px;
-	flex-shrink: 0;
 	height: auto;
-	padding-top: 3px;
-	padding-bottom: 2px;
+	/* padding-top: 3px;
+	padding-bottom: 2px; */
 	/* margin-right: 14px;
 	margin-left: 40px; */
 }
 
 .header__navigation-bar {
-	display: block;
+	display: flex;
 }
 
 .header__menu {
 	max-width: 385px;
-	/* margin-right: 112px; */
+	/* margin-right: 112px;  */
 	display: flex;
 	align-items: start;
 	gap: 27px;
