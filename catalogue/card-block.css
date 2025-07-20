@@ -1,0 +1,309 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+input[type='file'] {
+	max-width: 100%;
+}
+
+/* стили для десктопа */
+
+.body {
+	margin: 0 auto;
+	max-width: 1440px;
+	max-height: 820px;
+	color: rgb(42, 35, 103);
+}
+
+.header {
+	box-sizing: border-box;
+	padding: 80px 140px 50px 140px;
+	margin: 0 auto;
+	background-color: rgb(255, 255, 255);
+	max-width: 1400px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	font-family: Montserrat; 
+	font-weight: 800;
+	font-size: 36px;
+	line-height: 44px;
+	letter-spacing: 0%;
+}
+
+.header__text-violet {
+	color: rgb(107, 90, 249);
+}
+
+.main {
+	margin: 0 auto;
+	max-width: 1440px;
+	padding: 5px 140px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+}
+
+.cards {
+	display: flex;
+	flex-direction: row;
+	gap: 20px; 
+	max-width: 1165px;
+}
+
+.cards__item-01, .cards__item-02, .cards__item-03 {
+	width: 373px;
+	height: 200px;
+	padding: 10px 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+}
+
+.cards__header {
+	font-family: Montserrat; 
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+}
+
+.cards__red-line {
+	border: none;
+	border-top: 2px solid red;
+	width: 50%;
+}
+
+.cards__content {
+	font-family: Montserrat; 
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+}
+
+.main__button {
+	width: 275px;
+	height: 60px;
+	border: 0;
+	border-radius: 5px;
+	color: rgb(255, 255, 255);
+	font-family: Montserrat;
+	font-size: 12px;
+	font-weight: 800;
+	line-height: 15px;
+	letter-spacing: 0%;
+	text-align: center;
+	background-color: rgb(107, 90, 249);
+	cursor: pointer;
+}
+
+.main__button:hover {
+	background-color: rgb(103, 196, 201);
+}
+
+/* desctop карточки в развернутом состоянии */
+
+.cards__item-04, .cards__item-05, .cards__item-06 {
+	width: 373px;
+	height: 200px;
+	padding: 10px 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+}
+
+/* desctop карточки в скрытом состоянии */
+
+.cards__item-04, .cards__item-05, .cards__item-06 {
+	display: none;
+}
+
+.main__swiper {
+	display: none;
+}
+
+/* анимация поворота по клику */
+.main__pointer--unfold {
+	transform: rotate(180deg);
+	transition: transform 2s ease;
+}
+
+/* стили для ноутбука */
+
+@media (min-width: 600px) and (max-width: 800px) {
+
+.body {
+	max-width: 800px;
+	max-height: 940px;
+}
+
+.header {
+	box-sizing: border-box;
+	padding: 40px 10px 30px 10px;
+	max-width: 800px;
+	font-size: 24px;
+	line-height: 29px;
+}
+
+.main {
+	max-width: 800px;
+	padding: 10px;
+	gap: 20px;
+}
+
+.cards {
+	gap: 20px; 
+	max-width: 750px;
+}
+
+.cards__item-01, .cards__item-02 {
+	width: 364px;
+	height: 200px;
+	padding: 10px;
+	gap: 3px;
+}
+
+/* laptop карточки в развернутом состоянии */
+.cards__item-03, .cards__item-04, .cards__item-05, .cards__item-06 {
+	width: 364px;
+	height: 200px;
+	padding: 10px;
+	gap: 3px;
+}
+
+/* laptop карточки в сркытом состоянии */
+.cards__item-03, .cards__item-04, .cards__item-05, .cards__item-06 {
+	display: none;
+}
+}
+
+/* стили для телефона */
+
+@media (min-width: 200px) and (max-width: 599px) {
+
+.body {
+	max-width: 370px;
+	max-height: 470px;
+}
+
+.header {
+	padding: 30px 10px;
+	max-width: 360px;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.main {
+	max-width: 360px;
+	padding: 10px;
+	gap: 20px;
+}
+
+/* .cards {
+	gap: 20px; 
+	max-width: 360px;
+} */
+
+/* .cards__item-01 {
+	width: 340px;
+	padding: 10px;
+	gap: none;
+} */
+
+.cards__item-01, .cards__item-02, .cards__item-03, .cards__item-04, .cards__item-05, .cards__item-06 {
+	display: none;
+}
+
+.main__swiper {
+	display: block;
+}
+
+.main__pointer {
+	display: none;
+}
+}

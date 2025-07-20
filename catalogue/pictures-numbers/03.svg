@@ -1,0 +1,20 @@
+<svg width="91.894104" height="62.328125" viewBox="0 0 91.8941 62.3281" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_1_1268_dd" x="0.000000" y="0.000000" width="91.894104" height="62.328125" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="4"/>
+			<feGaussianBlur stdDeviation="2.66667"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape"/>
+		</filter>
+	</defs>
+	<g filter="url(#filter_1_1268_dd)">
+		<path id="03" d="M19.5 48.77Q23.01 50.32 27.2 50.32Q31.37 50.32 34.85 48.78Q36.02 48.26 37.1 47.57Q37.79 47.14 38.42 46.65Q41.85 44.01 43.92 39.6Q46.39 34.39 46.39 27.15Q46.39 19.93 43.92 14.71Q41.85 10.31 38.42 7.67Q37.79 7.17 37.1 6.75Q36.02 6.06 34.85 5.54Q31.37 4 27.2 4Q23.01 4 19.5 5.55Q18.34 6.06 17.26 6.75Q16.65 7.13 16.07 7.57Q12.57 10.23 10.45 14.71Q8 19.93 8 27.15Q8 34.39 10.45 39.6Q12.57 44.09 16.07 46.75Q16.65 47.19 17.26 47.57Q18.34 48.26 19.5 48.77ZM80.75 27.39Q77.62 23.96 71.73 23L81.84 11.48L81.84 4.76L50.48 4.76L50.48 13.07L69.56 13.07L60.34 23.51L60.34 30.35L65.08 30.35Q70.95 30.35 72.71 33.05Q73.47 34.2 73.47 35.85Q73.47 37.31 72.85 38.41Q72.29 39.41 71.22 40.12Q68.98 41.62 65.08 41.62Q63.35 41.62 61.67 41.37Q59.91 41.11 58.2 40.57Q54.84 39.51 52.28 37.59L48.25 45.53Q51.45 47.82 56.01 49.07Q58.24 49.68 60.52 49.99Q62.91 50.32 65.34 50.32Q71.42 50.32 75.61 48.34Q79.8 46.35 81.84 43.06Q82.82 41.48 83.33 39.77Q83.89 37.89 83.89 35.85Q83.89 32.54 82.54 29.93Q81.83 28.56 80.75 27.39ZM30.64 40.79Q29.11 41.56 27.2 41.56Q25.37 41.56 23.89 40.84Q22.09 39.97 20.81 38.04Q18.48 34.51 18.48 27.15Q18.48 19.79 20.81 16.28Q22.09 14.35 23.89 13.48Q25.37 12.76 27.2 12.76Q29.11 12.76 30.64 13.53Q32.38 14.4 33.62 16.28Q35.96 19.79 35.96 27.15Q35.96 34.51 33.62 38.04Q32.38 39.92 30.64 40.79Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+	</g>
+</svg>
