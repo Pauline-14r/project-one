@@ -129,6 +129,7 @@ input[type='file'] {
 .cards {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	gap: 20px; 
 	max-width: 1165px;
 }
@@ -184,9 +185,29 @@ input[type='file'] {
 	background-color: rgb(103, 196, 201);
 }
 
-/* desctop карточки в развернутом состоянии */
+/* desctop карточки в скрытом состоянии */
 
 .cards__item-04, .cards__item-05, .cards__item-06 {
+	display: none;
+}
+
+/* анимация поворота по клику при открытии */
+.main__pointer--unfold {
+	transform: rotate(180deg);
+	transition: transform 2s ease;
+}
+
+/* анимация поворота по клику при закрытии */
+
+.main__pointer--close {
+	transform: rotate(-180deg);
+	transition: transform 2s ease;
+}
+
+/* desctop карточки в развернутом состоянии */
+
+.cards__item-04--unfold, .cards__item-05--unfold, .cards__item-06--unfold {
+	display: flex;
 	width: 373px;
 	height: 200px;
 	padding: 10px 15px;
@@ -195,22 +216,11 @@ input[type='file'] {
 	gap: 5px;
 	box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
 	border-radius: 10px;
-}
+} 
 
-/* desctop карточки в скрытом состоянии */
-
-.cards__item-04, .cards__item-05, .cards__item-06 {
+/* свайпер */
+.swiper {
 	display: none;
-}
-
-.main__swiper {
-	display: none;
-}
-
-/* анимация поворота по клику */
-.main__pointer--unfold {
-	transform: rotate(180deg);
-	transition: transform 2s ease;
 }
 
 /* стили для ноутбука */
@@ -248,18 +258,20 @@ input[type='file'] {
 	gap: 3px;
 }
 
-/* laptop карточки в развернутом состоянии */
+/* laptop карточки в сркытом состоянии */
 .cards__item-03, .cards__item-04, .cards__item-05, .cards__item-06 {
+	display: none;
+}
+
+/* laptop карточки в развернутом состоянии */
+.cards__item-03--unfold, .cards__item-04--unfold, .cards__item-05--unfold, .cards__item-06--unfold {
+	display: flex;
 	width: 364px;
 	height: 200px;
 	padding: 10px;
 	gap: 3px;
 }
 
-/* laptop карточки в сркытом состоянии */
-.cards__item-03, .cards__item-04, .cards__item-05, .cards__item-06 {
-	display: none;
-}
 }
 
 /* стили для телефона */
@@ -272,7 +284,7 @@ input[type='file'] {
 }
 
 .header {
-	padding: 30px 10px;
+	padding: 10px 30px 0px 30px;
 	max-width: 360px;
 	font-size: 18px;
 	line-height: 22px;
@@ -281,7 +293,7 @@ input[type='file'] {
 .main {
 	max-width: 360px;
 	padding: 10px;
-	gap: 20px;
+	gap: 10px;
 }
 
 /* .cards {
@@ -299,8 +311,44 @@ input[type='file'] {
 	display: none;
 }
 
-.main__swiper {
-	display: block;
+/* свайпер */
+
+.swiper {
+	width: 350px;
+  height: 240px;
+  overflow: hidden;
+	display: flex;
+	background-color: #fff; 
+}
+
+.swiper-wrapper {
+	display: flex;
+  height: 100%;
+  margin: 0;
+  width: auto;
+}
+
+.swiper-slide {
+	flex-shrink: 0;
+	padding: 20px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 350px;
+	height: 200px;
+}
+
+.swiper__pic {
+	width: 69px;
+	height: auto;
+}
+
+.swiper__red-line {
+	border: none;
+	border-top: 2px solid red;
+	width: 50%;
 }
 
 .main__pointer {
